@@ -5,15 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="descripiton"content="Perfil do portifólio">
 	<title>Contatos </title>
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon.ico">
 	<link rel="icon" type="image/png" sizes="16x16" href="imagens/android-icon-36x36.png">
 	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="meus_estilos.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
 	<header>
-		<h1><a href="index.html"><img class="image" src="imagens/minha-foto2.png" alt="Minha foto" title="Minha foto"></a></h1>
-		<h2>Bruna Brandão</h2>
 		<nav>
 			<ul>
 				<li><a title="Sobre_mim" href="index.html">Sobre mim</a></li>
@@ -21,15 +20,23 @@
 				<li><a title="Contato" href="Contato.html">Contatos</a></li>
 			</ul>
 		</nav>
+		<div class="foto">
+			<a href="index.html"><img class="image" src="imagens/minha-foto2.png" alt="Minha foto" title="Minha foto"></a>
+			<h2>Bruna Brandão</h2>
+			<h2>Desenvolvedora de Software</h2>
+			</div>
+
 	</header>
 	
 	<section>
-		<h2><b>Contatos</b> / e-mail/ Redes Sociais</h2>
+		<div class="contatinho">
+		<h2><b>Contatos</b></h2>
 		<p align="right">
 			<a href="mailto:bruna.costab@hotmail.com"><img src="imagens/S_Email.png" alt="e-mail" title="email"></a>
 			<a href="https://www.linkedin.com" target="_blank"><img src="imagens/S_linkedin.png" alt="Linkedin" title="Linkedin"></a>
-			<a href="https://www.facebook.com" target="_blank"><img src="imagens/S_facebook.png" alt="facebook" title="Facebook"></a>
-
+			<a href="https://github.com/BrunaBrand" target="_blank"><img src="icon/icon-github.svg" alt="github" title="github"></a>
+		</div>
+			<!-- <a target="_blank" href="https://icons8.com/icon/3tC9EQumUAuq/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
 
 		</p>
 	</section>
@@ -41,6 +48,7 @@
 			<input name="subject" value="index.html" type="hidden" /> <!--Link para onde será enviado-->
 
 			<h2><b>Contato</b></h2>
+			<p>Entre em contato comigo!</p>
 			<p>
 				<label for="nome">*Nome: </label><input type="text" placeholder="Digite seu nome" required="required" name="nome" />
 			</p>
@@ -51,64 +59,7 @@
 			<p>
 				<label for="email">*E-mail: </label><input type="email" placeholder="Digite seu e-mail" required="required" nome="email" />
 			</p>
-
-			<p>
-				<label for="mensagem">Deixe sua mensagem: </label> <textarea placeholder="Comentários"></textarea>
-			</p>
-			<br><br>
-			<p>
-				*Campos obrigatórios
-			</p>
-			<p>
-				<input type="reset" value="limpar">
-				<input type="submit" value="Ok">
-				<button onclick="minhaFuncao()">Enviar</button>
-			</p>
-
-<hr />
-			<!-- Segundo formulário do site -->
-
-			<h3>Insira seu nome: </h3><input type="text" name="nome2" size="20" maxlength="50px" />
-			<h3>Insira seu estado: </h3><input type="text" name="uf" size="2" value="SP" />
-			<h3>Crie uma senha: </h3><input type="password" name="cartão" size="6" />
-			<h3>Digite novamente sua senha: </h3><input type="password" name="cartão" size="6">
-			<h3>Deseja trabalhar conosco? </h3>
-			<input type="radio" name="question" value="Sim" />Sim
-			<input type="radio" name="question" value="Não" />Não
-			<input type="radio" name="question" value="Depende" />Depende do salário
-
-			<h3>O que deseja aprender?</h3>
-			<input type="checkbox" name="options" value="html" /> HTML5 e CSS3 
-			<input type="checkbox" name="options" value="javascript" /> Javascript
-			<input type="checkbox" name="options" value="php" /> PHP
-			<br><br>
-			<input type="checkbox" name="options" value="python" />Python
-			<input type="checkbox" name="options" value="c" /> C Sharp
-			<input type="checkbox" name="options" value="ruby" /> Ruby
-
-			<br><br>
-			<h3>Como deseja estudar?</h3>
-			<br>
-			<select>
-				<option value="Selecione">--Selecione uma opção</option>
-				<option value="Presenciais">Aulas Presenciais</option>
-				<option value="on-line">Aulas On-line</option>
-				<option value="híbrido">Ensino Híbrido</option>
-			</select>
-			<br><br>
-		<textarea cols="40"> Escreva aqui seus comentários></textarea>
-
-		</form>
-	</section>
-
-	<section class="img">
-		<hr img src="imagens/barra olhar.gif" />
-		<img src="imagens/img-home-html5.jpg" alt="Html5 e Css3" title="Html5 e Css3" />
-		<img src="imagens/img-home-navegadores.jpg" alt="Navegadores" title="Navegadores" />
-		<img src="imagens/img-home-rede.jpg" alt="Redes de computadores" title="Redes de computadores">
-	</section>
-
-
+			<button>Enviar</button>
 	<footer>
 		<p>
 			Copyright - 2022  | Todos os direitos reservados ® - Bruna Brandão
